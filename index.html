@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css">
+	<style>
+
+		strong, code {
+			color: #00D8FF;
+		}
+
+		.logo {
+			height: 4em;
+			padding: 0 1.5em;
+		}
+
+		.reveal section .fit-slide-image {
+			max-width: 90vw;
+			max-height: 70vh;
+			height: auto;
+			width: auto;
+			display: block;
+			margin: 0 auto;
+		}
+		
+	</style>
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-background="#fff">
+				<div>
+					<img src="./css.svg" class="logo" alt="css logo" />
+				</div>
+				<h1>Understand How CSS Styles are Applied to HTML Elements</h1>
+				<h3>by Learning the Fundamentals (Precedence, Specificity, Cascade)</h3>
+				<h5>by Sebastian Weber</h5>
+			</section>
+			<section data-markdown="slidedeck/slides.md"></section>
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
